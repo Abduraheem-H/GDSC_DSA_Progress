@@ -5,7 +5,7 @@ class Solution:
         max_hash = {"max": None}
         max_count = 0
         for key in counter.keys():
-            if counter[key] > max_count:
+            if max(counter[key],max_count) == counter[key]:
                 max_hash["max"] = key
                 max_count = counter[key]
         return max_hash["max"]
