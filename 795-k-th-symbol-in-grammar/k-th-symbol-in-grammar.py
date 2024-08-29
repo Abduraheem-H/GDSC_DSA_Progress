@@ -20,8 +20,4 @@ class Solution:
                 return 0
         
         
-        if k <= mid:
-            return self.kthGrammar(n - 1, k)
-        else:
-            
-            return 1 - self.kthGrammar(n - 1, k - mid)
+     
